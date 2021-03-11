@@ -8,6 +8,7 @@ WDIR="$HOME/Pictures/wallpapers"
 JAP=""
 HIR=""
 LAND=""
+WAL="$DIR/wallpapers"
 
 # The actual functions for the script execution
 install_jap() {
@@ -38,6 +39,12 @@ install_hires() {
                 mkdir -p "$HIR"
                 cp -rf $DIR/wallpapers/hi-res/* "$HIR"
             fi
+}
+
+# make tarball
+make_tar() {
+	tar -czf $WAL $WDIR
+		echo -e "\n[*] Making a backup of the wallpapers into a tarball..."
 }
 
 # finish install function
