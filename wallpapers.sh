@@ -5,9 +5,9 @@
 # The dirs variables
 DIR=`pwd`
 WDIR="$HOME/Pictures/wallpapers"
-JAP=""
-HIR=""
-LAND=""
+JAP="$HOME/Pictures/wallpapers/Japan"
+HIR="$HOME/Pictures/wallpapers/Hi-res"
+LAND="$HOME/Pictures/wallpapers/Landscape"
 WAL="$DIR/wallpapers"
 
 # The actual functions for the script execution
