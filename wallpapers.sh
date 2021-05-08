@@ -4,40 +4,40 @@
 
 # The dirs variables
 DIR=`pwd`
-WDIR="$HOME/Pictures/wallpapers"
-JAP="$HOME/Pictures/wallpapers/Japan"
-HIR="$HOME/Pictures/wallpapers/Hi-res"
-LAND="$HOME/Pictures/wallpapers/Landscape"
-WAL="$DIR/wallpapers"
+WDIR="$HOME/Pictures/Wallpapers"
+JAP="$HOME/Pictures/Wallpapers/Japan"
+HIR="$HOME/Pictures/Wallpapers/Hi-res"
+LAND="$HOME/Pictures/Wallpapers/Landscape"
+WAL="$DIR/Wallpapers"
 
 # The actual functions for the script execution
 install_jap() {
         echo -e "\n[*] Installing japanese style wallpapers..."
             if [[ -d "$JAP" ]] then
-                cp -rf $DIR/wallpapers/japan/* "$JAP"
+                cp -rf $DIR/Wallpapers/japan/* "$JAP"
             else
                 mkdir -p "$JAP"
-                cp -rf $DIR/wallpapers/japan/* "$JAP"
+                cp -rf $DIR/Wallpapers/japan/* "$JAP"
             fi
 }
 
 install_land() {
         echo -e "\n[*] Installing landscape style wallpapers..."
             if [[ -d "$LAND" ]] then
-                cp -rf $DIR/wallpapers/landscape/* "$LAND"
+                cp -rf $DIR/Wallpapers/landscape/* "$LAND"
             else
                 mkdir -p "$LAND"
-                cp -rf $DIR/wallpapers/landscape/* "$LAND"
+                cp -rf $DIR/Wallpapers/landscape/* "$LAND"
             fi
 }
 
 install_hires() {
         echo -e "\n[*] Installing High-Resolution wallpapers..."
             if [[ -d "$HIR" ]] then
-                cp -rf $DIR/wallpapers/hi-res/* "$HIR"
+                cp -rf $DIR/Wallpapers/hi-res/* "$HIR"
             else
                 mkdir -p "$HIR"
-                cp -rf $DIR/wallpapers/hi-res/* "$HIR"
+                cp -rf $DIR/Wallpapers/hi-res/* "$HIR"
             fi
 }
 
