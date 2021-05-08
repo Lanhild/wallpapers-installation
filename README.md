@@ -1,2 +1,2 @@
 # wallpapers-installation
-a script to install automatically different styles of wallpapers
+This script is used to automatically install a collection of various wallpapers to the specified location.
